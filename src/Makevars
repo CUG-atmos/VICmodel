@@ -18,7 +18,7 @@ OBJECTS = $(SOURCES_C:.c=.o) $(SOURCES_CPP:.cpp=.o)
 
 .PHONY: all clean
 
-clean: $(SHLIB)
-	rm -rf $(OBJECTS)
-
 all: $(SHLIB) $(clean)
+
+clean:
+	rm -rf $(OBJECTS) *.exe *.o *.so *.dll
